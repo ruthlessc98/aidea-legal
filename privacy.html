@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AIDEA</title>
+    <style>
+        :root {
+            --aidea-cyan: #00d4ff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-body: #f9fafb;
+            --bg-card: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--bg-card);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: var(--aidea-cyan);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid var(--aidea-cyan);
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: var(--aidea-cyan);
+            font-size: 1.75rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            color: var(--text-main);
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .contact-info {
+            background-color: #f3f4f6;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #e5e7eb;
+            margin: 40px 0;
+        }
+        @media (max-width: 640px) {
+            .container {
+                margin: 0;
+                padding: 20px;
+                border-radius: 0;
+            }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for AIDEA</h1>
+        <div class="meta">
+            <p><strong>Effective Date:</strong> December 19, 2024</p>
+            <p><strong>Last Updated:</strong> December 19, 2024</p>
+        </div>
+
+        <h2>Introduction</h2>
+        <p>AIDEA ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application AIDEA (the "App").</p>
+        <p>By using AIDEA, you agree to the collection and use of information in accordance with this policy.</p>
+
+        <h2>Information We Collect</h2>
+        <h3>Information You Provide</h3>
+        <ul>
+            <li><strong>Account Information:</strong> Email address (for authentication)</li>
+            <li><strong>User Content:</strong> Notes, projects, subjects, and any text content you create in the App</li>
+            <li><strong>AI Context Descriptions:</strong> Optional descriptions you provide to help AI routing</li>
+            <li><strong>Subscription Information:</strong> Payment details processed through Google Play (we do not store credit card information)</li>
+        </ul>
+
+        <h3>Automatically Collected Information</h3>
+        <ul>
+            <li><strong>Usage Data:</strong> AI routing decisions, note creation timestamps, feature usage</li>
+            <li><strong>Device Information:</strong> Device type, operating system version, app version</li>
+            <li><strong>Performance Data:</strong> Crash reports, error logs (anonymized)</li>
+        </ul>
+
+        <h3>Information from Third Parties</h3>
+        <ul>
+            <li><strong>Google Play:</strong> Subscription status and purchase verification</li>
+            <li><strong>Authentication:</strong> Email verification through Supabase Auth</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use collected information to:</p>
+        <ul>
+            <li><strong>Provide Core Services:</strong> Store and sync your notes across devices</li>
+            <li><strong>AI Routing:</strong> Analyze note content to automatically organize into appropriate projects</li>
+            <li><strong>Improve Accuracy:</strong> Learn from your routing patterns to improve AI suggestions</li>
+            <li><strong>Subscription Management:</strong> Process payments and manage access to premium features</li>
+            <li><strong>App Improvement:</strong> Analyze usage patterns to enhance features and fix bugs</li>
+            <li><strong>Customer Support:</strong> Respond to your requests and provide assistance</li>
+            <li><strong>Legal Compliance:</strong> Comply with applicable laws and regulations</li>
+        </ul>
+
+        <h2>AI Processing</h2>
+        <h3>How AI Routing Works</h3>
+        <ul>
+            <li>Your note content is sent to OpenAI's GPT-4o-mini model for routing analysis</li>
+            <li>AI analyzes semantic meaning to determine appropriate project/subject placement</li>
+            <li>Routing decisions are logged for transparency and pattern learning</li>
+            <li><strong>We do not use your content to train AI models</strong></li>
+        </ul>
+
+        <h3>Data Sent to OpenAI</h3>
+        <ul>
+            <li>Note content (only for active routing requests)</li>
+            <li>Project and subject names</li>
+            <li>Recent note titles and previews (for context)</li>
+            <li><strong>OpenAI processes this data but does not retain it</strong> (per OpenAI's API terms)</li>
+        </ul>
+
+        <h3>Pattern Learning</h3>
+        <ul>
+            <li>After 20+ successful routes with similar keywords, the system uses patterns instead of AI</li>
+            <li>This reduces costs and improves speed while maintaining accuracy</li>
+            <li>Patterns are stored locally to your account and never shared</li>
+        </ul>
+
+        <h2>Data Storage and Security</h2>
+        <h3>Where Your Data Lives</h3>
+        <ul>
+            <li><strong>Primary Database:</strong> Supabase (encrypted PostgreSQL database)</li>
+            <li><strong>Location:</strong> Hosted on secure cloud infrastructure (AWS)</li>
+            <li><strong>Backups:</strong> Automated weekly backups with 30-day retention</li>
+        </ul>
+
+        <h3>Security Measures</h3>
+        <ul>
+            <li>All data transmission uses HTTPS/TLS encryption</li>
+            <li>Database access requires authentication</li>
+            <li>Row-level security policies restrict data access to account owners only</li>
+            <li>API keys and secrets stored securely (never in code)</li>
+            <li>Regular security audits and updates</li>
+        </ul>
+
+        <h2>Data Sharing and Disclosure</h2>
+        <h3>We DO NOT Sell Your Data</h3>
+        <p>We will never sell, rent, or trade your personal information.</p>
+
+        <h3>Limited Sharing</h3>
+        <p>We only share data with:</p>
+        <ol>
+            <li><strong>Service Providers:</strong>
+                <ul>
+                    <li><strong>Supabase:</strong> Database and authentication hosting</li>
+                    <li><strong>OpenAI:</strong> AI routing processing (temporary, not stored)</li>
+                    <li><strong>Google Play:</strong> Payment processing and subscription management</li>
+                </ul>
+            </li>
+            <li><strong>Legal Requirements:</strong>
+                <ul>
+                    <li>Court orders, subpoenas, or legal processes</li>
+                    <li>Protection of our rights, property, or safety</li>
+                    <li>Prevention of fraud or illegal activity</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Analytics</h3>
+        <ul>
+            <li>We collect anonymized usage statistics to improve the app</li>
+            <li>No personally identifiable information is included in analytics</li>
+            <li>You can opt out of analytics in Settings</li>
+        </ul>
+
+        <h2>Your Rights and Choices</h2>
+        <h3>Data Access and Control</h3>
+        <ul>
+            <li><strong>View Your Data:</strong> Access all your notes and routing history anytime in the app</li>
+            <li><strong>Export Data:</strong> Download all your data in JSON format (Settings → Export Data)</li>
+            <li><strong>Delete Data:</strong> Permanently delete your account and all associated data</li>
+            <li><strong>Opt Out:</strong> Disable AI routing and use manual organization only</li>
+        </ul>
+
+        <h3>GDPR Rights (for EU Users)</h3>
+        <p>If you are in the European Economic Area, you have the right to:</p>
+        <ul>
+            <li>Access your personal data</li>
+            <li>Rectify inaccurate data</li>
+            <li>Request data deletion ("right to be forgotten")</li>
+            <li>Data portability</li>
+            <li>Object to processing</li>
+            <li>Lodge a complaint with a supervisory authority</li>
+        </ul>
+        <p>To exercise these rights, contact us at: <strong>contactheaideapp@gmail.com</strong></p>
+
+        <h3>California Privacy Rights (CCPA)</h3>
+        <p>California residents have the right to:</p>
+        <ul>
+            <li>Know what personal information is collected</li>
+            <li>Know if personal information is sold or disclosed</li>
+            <li>Opt out of the sale of personal information (we don't sell data)</li>
+            <li>Request deletion of personal information</li>
+            <li>Non-discrimination for exercising privacy rights</li>
+        </ul>
+
+        <h2>Data Retention</h2>
+        <ul>
+            <li><strong>Active Accounts:</strong> We retain your data for as long as your account is active</li>
+            <li><strong>Deleted Accounts:</strong> Data is permanently deleted within 30 days of account deletion</li>
+            <li><strong>Backups:</strong> Deleted data is removed from backups after 90 days</li>
+            <li><strong>Legal Holds:</strong> We may retain data longer if required by law</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>AIDEA is not intended for users under 13 years of age. We do not knowingly collect data from children under 13. If we discover we have collected data from a child under 13, we will delete it immediately.</p>
+
+        <h2>International Data Transfers</h2>
+        <p>Your data may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your data in accordance with this Privacy Policy.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of changes by:</p>
+        <ul>
+            <li>Updating the "Last Updated" date</li>
+            <li>Posting a notice in the app</li>
+            <li>Sending an email notification (for material changes)</li>
+        </ul>
+        <p>Your continued use of AIDEA after changes constitutes acceptance of the updated policy.</p>
+
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, please contact us:</p>
+            <p><strong>Email:</strong> contactheaideapp@gmail.com</p>
+            <p><strong>Response Time:</strong> Within 48 hours</p>
+        </div>
+
+        <hr>
+        <h2>Consent</h2>
+        <p>By using AIDEA, you consent to our Privacy Policy and agree to its terms.</p>
+    </div>
+</body>
+</html>
