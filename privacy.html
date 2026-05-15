@@ -105,7 +105,7 @@
             <li><strong>Voice Input:</strong> Voice recordings or voice-to-text input if you use voice features</li>
             <li><strong>Uploaded Files:</strong> Images, files, and other media you upload to the App</li>
             <li><strong>Module and Workspace Content:</strong> Content stored within any project, page, database, or module you create</li>
-            <li><strong>Subscription Information:</strong> Payment details processed through Google Play (we do not store credit card information directly)</li>
+            <li><strong>Subscription Information:</strong> Payment-related data handled by our payment providers depending on the platform you use. For Android purchases, payments are processed through Google Play. For Windows and web purchases, payments may be processed through Stripe, which may collect your name, email address, billing details, payment method information, and transaction details. DOCK OS does not store full credit or debit card numbers directly.</li>
         </ul>
 
         <h3>Automatically Collected Information</h3>
@@ -117,7 +117,8 @@
 
         <h3>Information from Third Parties</h3>
         <ul>
-            <li><strong>Google Play:</strong> Subscription status and purchase verification</li>
+            <li><strong>Google Play:</strong> Subscription status and purchase verification (Android)</li>
+            <li><strong>Stripe:</strong> Payment processing and verification (Windows/web)</li>
             <li><strong>RevenueCat:</strong> Subscription and entitlement management</li>
             <li><strong>Authentication:</strong> Email verification through Supabase Auth</li>
         </ul>
@@ -155,7 +156,8 @@
             <li><strong>Primary Database:</strong> Supabase (encrypted PostgreSQL database)</li>
             <li><strong>App Platform:</strong> Lovable Cloud and related infrastructure</li>
             <li><strong>Subscription Management:</strong> RevenueCat</li>
-            <li><strong>Payment Processing:</strong> Google Play</li>
+            <li><strong>Payment Processing (Android):</strong> Google Play</li>
+            <li><strong>Payment Processing (Windows/web):</strong> Stripe</li>
             <li><strong>Location:</strong> Hosted on secure cloud infrastructure</li>
         </ul>
 
@@ -179,7 +181,8 @@
                     <li><strong>Supabase:</strong> Database and authentication hosting</li>
                     <li><strong>Lovable Cloud:</strong> App platform and infrastructure</li>
                     <li><strong>RevenueCat:</strong> Subscription and entitlement management</li>
-                    <li><strong>Google Play:</strong> Payment processing and subscription management</li>
+                    <li><strong>Google Play:</strong> Payment processing and subscription management (Android)</li>
+                    <li><strong>Stripe:</strong> Payment processing for Windows and web purchases</li>
                     <li><strong>AI Providers:</strong> Processing AI feature requests (temporary, per their API terms)</li>
                 </ul>
             </li>

@@ -154,22 +154,23 @@
 
         <h2>Subscription Terms</h2>
         <h3>Payment</h3>
+        <p>The payment provider used depends on the platform:</p>
         <ul>
-            <li>Subscriptions are purchased and managed through Google Play</li>
-            <li>Payment is charged to your Google Play account at purchase confirmation</li>
+            <li><strong>Android:</strong> Subscriptions are purchased and managed through Google Play. Payment is charged to your Google Play account at purchase confirmation.</li>
+            <li><strong>Windows / Web:</strong> Subscriptions may be purchased and managed through Stripe. Payment is charged to the card or method on file with Stripe at purchase confirmation.</li>
             <li>Pricing is displayed at the time of purchase and may vary by region</li>
         </ul>
 
         <h3>Auto-Renewal</h3>
         <ul>
-            <li>Subscriptions <strong>automatically renew</strong> unless you cancel through Google Play at least 24 hours before the end of the current billing period</li>
-            <li>Your Google Play account will be charged for renewal within 24 hours prior to the end of the current period</li>
-            <li>To manage or cancel your subscription, go to <strong>Google Play → Subscriptions → DOCK OS</strong></li>
+            <li>Subscriptions <strong>automatically renew</strong> unless canceled through the payment provider you used before the end of the current billing period</li>
+            <li><strong>Android:</strong> Cancel through <strong>Google Play → Subscriptions → DOCK OS</strong> at least 24 hours before renewal</li>
+            <li><strong>Windows / Web:</strong> Cancel through your account settings or by contacting support before renewal</li>
         </ul>
 
         <h3>Cancellation and Downgrade</h3>
         <ul>
-            <li>You may cancel your subscription at any time through Google Play</li>
+            <li>You may cancel your subscription at any time through the relevant payment provider</li>
             <li>Cancellation takes effect at the end of the current billing period; you retain access to paid features until then</li>
             <li>No partial refunds are issued for mid-period cancellations</li>
             <li>If your payment fails, your subscription is canceled, or you downgrade your plan, <strong>paid features may become locked or read-only</strong> until payment is resolved or you upgrade again</li>
@@ -213,7 +214,8 @@
             <li><strong>Supabase:</strong> Database and authentication</li>
             <li><strong>Lovable Cloud:</strong> App platform and infrastructure</li>
             <li><strong>RevenueCat:</strong> Subscription management</li>
-            <li><strong>Google Play:</strong> Payment processing</li>
+            <li><strong>Google Play:</strong> Payment processing (Android)</li>
+            <li><strong>Stripe:</strong> Payment processing (Windows/web)</li>
             <li><strong>AI Providers:</strong> AI feature processing</li>
         </ul>
         <p>These services have their own terms and privacy policies. We are not responsible for third-party service failures or changes.</p>
